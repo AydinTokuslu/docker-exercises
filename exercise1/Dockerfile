@@ -5,4 +5,4 @@ RUN apt-get install python3-pip -y
 RUN pip3 install flask
 COPY . /app
 WORKDIR /app
-CMD [ "executable" ]
+CMD python3 ./welcome.py
